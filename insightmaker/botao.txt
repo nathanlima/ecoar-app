@@ -1,0 +1,226 @@
+
+fetch('http://localhost:5000/getParticipantesAtivos')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var participantes_ativos = findName("Participantes Ativos");
+setData(participantes_ativos, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+
+
+fetch('http://localhost:5000/getParticipantesCadastrados')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var participantes_cadastrados = findName("Participantes Cadastrados");
+setData(participantes_cadastrados, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+
+
+fetch('http://localhost:5000/getColetaPet')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var coleta_pet = findName("Coleta Pet");
+setData(coleta_pet, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+
+
+fetch('http://localhost:5000/getColetaVidro')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var coleta_vidro = findName("Coleta Vidro");
+setData(coleta_vidro, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+
+
+fetch('http://localhost:5000/getColetaAluminio')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var coleta_aluminio = findName("Coleta Aluminio");
+setData(coleta_aluminio, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+
+
+fetch('http://localhost:5000/getColetaPapel')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var coleta_papel = findName("Coleta Papel");
+setData(coleta_papel, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+
+
+fetch('http://localhost:5000/getColetaSacola')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var coleta_sacola = findName("Coleta Sacola");
+setData(coleta_sacola, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+
+
+fetch('http://localhost:5000/getRejeitos')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var rejeitos = findName("Rejeitos");
+setData(rejeitos, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+
+fetch('http://localhost:5000/getTotalResiduos')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados recebidos:', data);
+
+
+var total_residuos = findName("Total Resíduos");
+setData(total_residuos, data);
+
+  
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
+
+
+runModel();
+
+
+
+

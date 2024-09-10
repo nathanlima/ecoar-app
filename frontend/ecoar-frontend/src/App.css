@@ -1,0 +1,73 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Aplicação principal */
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra verde no topo */
+.top-bar {
+  height: 50px;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+/* Estilo do texto <h1> dentro da barra */
+.top-bar h1 {
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Div que ocupa o restante da tela */
+.content {
+  flex-grow: 1;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Estilo para os botões na tela inicial */
+.botoes-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os botões */
+}
+
+.botoes_acao_tela_inicial {
+  width: 200px;
+  height: 150px;
+  background-color: rgb(233, 233, 233); /* Cor de fundo igual ao content */
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o texto horizontalmente */
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px; /* Ajuste a fonte */
+  font-weight: bold; /* Adiciona o texto em negrito */
+  gap: 10px; /* Espaço entre a imagem e o texto */
+  text-align: center; /* Centraliza o texto no caso de múltiplas linhas */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo da imagem dentro do botão */
+.button-icon {
+  width: 35px; /* Ajuste o tamanho conforme necessário */
+  height: 35px; /* Ajuste o tamanho conforme necessário */
+}
